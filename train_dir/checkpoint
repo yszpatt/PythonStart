@@ -1,3 +1,0 @@
-model_checkpoint_path: "/tmp/aves/train_dir/model.ckpt-203"
-all_model_checkpoint_paths: "/tmp/aves/train_dir/model.ckpt-0"
-all_model_checkpoint_paths: "/tmp/aves/train_dir/model.ckpt-203"
