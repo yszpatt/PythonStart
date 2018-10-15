@@ -1,0 +1,6 @@
+a:this is a file
+a:3.1415926
+b:hello world!
+b:sfifjfowfjowfej
+中文
+
