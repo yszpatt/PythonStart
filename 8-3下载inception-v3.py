@@ -3,6 +3,7 @@ import os
 import tarfile
 import requests
 
+# 链接地址
 inception_pretrain_model_url = 'http://download.tensorflow.org/models/image/imagenet/inception-2015-12-05.tgz'
 
 inception_pretrain_model_dir = 'inception_model'
@@ -37,3 +38,4 @@ with tf.Session() as sess:
 
     writer = tf.summary.FileWriter(log_dir, sess.graph)
     writer.close()
+print('finish!!!')

@@ -1,6 +1,7 @@
 import tensorflow as tf
 import numpy as np
 
+# 简单实例
 x_date = np.random.rand(100)
 y_date = x_date * 0.1 + 0.2
 
