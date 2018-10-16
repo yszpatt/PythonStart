@@ -29,6 +29,7 @@ class NodeLookup(object):
             human_string = parsed_items[1]
             # 保存编号字符串与分类名称映射关系
             uid_to_human[uid] = human_string
+
         proto_as_ascii = tf.gfile.GFile(label_lookup_path).readlines()
         node_id_to_uid = {}
         for line in proto_as_ascii:
@@ -65,10 +66,12 @@ with tf.Session() as sess:
     # 遍历图片
     for (root, dirs, files) in os.walk('/Users/shenzheng/image/'):
         for file in files:
+            if not file.endswith(('.jpeg', '.gif', '.jpg', '.png')):
+                continue
             # 载入图片
             image_data = tf.gfile.FastGFile(
                 os.path.join(root, file), 'rb').read()
-
+            print(file)
             predictions = sess.run(
                 softmax_tensor, {'DecodeJpeg/contents:0': image_data})  # 图片格式是jpg
 
