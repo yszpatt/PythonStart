@@ -26,6 +26,7 @@ y = np.hstack((y0, y1))  # shape (200, )
 plt.scatter(x[:, 0], x[:, 1], c=y, s=100, lw=0, cmap='RdYlGn')
 plt.show()
 
+
 tf_x = tf.placeholder(tf.float32, x.shape)     # input x
 tf_y = tf.placeholder(tf.int32, y.shape)     # input y
 
