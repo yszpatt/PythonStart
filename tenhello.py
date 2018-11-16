@@ -59,6 +59,7 @@ for step in range(100):
         plt.text(1.5, -4, 'Accuracy=%.2f' %
                  acc, fontdict={'size': 20, 'color': 'red'})
         plt.pause(0.1)
+print("vscodetest")
 
 plt.ioff()
 plt.show()
